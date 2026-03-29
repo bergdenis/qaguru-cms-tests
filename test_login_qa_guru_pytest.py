@@ -18,7 +18,7 @@ def test_wrong_password_login():
     browser.open('https://school.qa.guru')
 
     browser.element('[name="email"]').type('bergdenis@seznam.cz')
-    browser.element('[name="password"]').type('1234').press_enter()
+    browser.element('[name="password"]').type('12345').press_enter()
     browser.element('.btn-error').should(have.text('Неверный пароль'))
 
 
